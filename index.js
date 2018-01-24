@@ -75,7 +75,7 @@ function routes(loopbackApplication, options) {
     };
     var oauth2RedirectUrl = _get(options, 'securityDefinitions.oauth2AccessCodeSecurity.authorizationUrl');
     if (oauth2RedirectUrl) {
-      config.oauth2RedirectUrl = options.protocol + '://' + options.host + '/explorer/oauth2-redirect.html';
+      config.oauth2RedirectUrl = loopbackApplication.get("url") + urlJoin(source, 'oauth2-redirect.html');
     }
     res.send(config);
   });
