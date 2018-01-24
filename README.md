@@ -1,3 +1,31 @@
+# Swagger-ui v3 with Security
+
+This is a WIP fork of advanced swagger.json OAuth2 support for Loopback using latest swagger-ui (currently 3.9)
+
+## Key Repositories
+
+- [drmikecrowe: loopback-component-explorer](https://github.com/drmikecrowe/loopback-component-explorer)
+- [drmikecrowe: loopback-swagger](https://github.com/drmikecrowe/loopback-swagger) 
+ 
+## SwaggerUI v3 Support Status
+
+- [x]  Integrate v3 of the SwaggerUI (using [swagger-ui-dist](https://www.npmjs.com/package/swagger-ui-dist))
+- [x]  securityDefinitions Support
+- [ ]  Integrate with [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer).
+  - [x] Update explorer to use new Swagger-UI
+  - [ ] Test and document using oauth2-redirect for OAuth2 local development
+- [ ]  Update automated tests
+- [ ]  Review loopback style guide
+
+## Setup
+
+### TEMPORARILY: Specify `drmikecrowe` loopback-component-explorer
+
+    "dependencies": {
+        "loopback-component-explorer": "git+https://github.com/drmikecrowe/loopback-component-explorer.git#v6.0.0-drmikecrowe1",
+
+---
+
 # loopback-component-explorer
 
 Browse and test your LoopBack app's APIs.
