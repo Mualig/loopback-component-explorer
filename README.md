@@ -11,12 +11,12 @@ This is a WIP fork of advanced swagger.json OAuth2 support for Loopback using la
 
 - See [drmikecrowe: loopback-swagger README status](https://github.com/drmikecrowe/loopback-swagger) 
 
-## Installation:
+## Installation
 
 Specify `drmikecrowe` loopback-component-explorer:
 
     "dependencies": {
-        "loopback-component-explorer": "git+https://github.com/drmikecrowe/loopback-component-explorer.git#v6.0.0-drmikecrowe2",
+        "loopback-component-explorer": "git+https://github.com/drmikecrowe/loopback-component-explorer.git#v6.0.0-drmikecrowe3",
 
 ---
 
