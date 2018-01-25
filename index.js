@@ -44,7 +44,6 @@ function routes(loopbackApplication, options) {
   var loopbackMajor = loopback && loopback.version &&
     loopback.version.split('.')[0] || 1;
 
-  console.log(JSON.stringify(options, null, 4));
   if (loopbackMajor < 2) {
     throw new Error(g.f('{{loopback-component-explorer}} requires ' +
       '{{loopback}} 2.0 or newer'));
@@ -73,10 +72,12 @@ function routes(loopbackApplication, options) {
     var config = {
         url: urlJoin(source, '/' + options.resourcePath),
     };
-    var oauth2RedirectUrl = _get(options, 'securityDefinitions.oauth2AccessCodeSecurity.authorizationUrl');
-    if (oauth2RedirectUrl) {
-      config.oauth2RedirectUrl = loopbackApplication.get("url") + urlJoin(source, 'oauth2-redirect.html');
-    }
+    var secDef = _get(options, 'securityDefinitions', {});
+    secDef.forEach(function(o) {
+      if (o.type === 'oauth2' && o.authorizationUrl > '') {
+        config.oauth2RedirectUrl = loopbackApplication.get("url") + urlJoin(source, 'oauth2-redirect.html');
+      }
+    });
     res.send(config);
   });
 

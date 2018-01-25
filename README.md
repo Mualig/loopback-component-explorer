@@ -9,13 +9,7 @@ This is a WIP fork of advanced swagger.json OAuth2 support for Loopback using la
  
 ## SwaggerUI v3 Support Status
 
-- [x]  Integrate v3 of the SwaggerUI (using [swagger-ui-dist](https://www.npmjs.com/package/swagger-ui-dist))
-- [x]  securityDefinitions Support
-- [ ]  Integrate with [loopback-component-explorer](https://github.com/strongloop/loopback-component-explorer).
-  - [x] Update explorer to use new Swagger-UI
-  - [ ] Test and document using oauth2-redirect for OAuth2 local development
-- [ ]  Update automated tests
-- [ ]  Review loopback style guide
+- See [drmikecrowe: loopback-swagger README status](https://github.com/drmikecrowe/loopback-swagger) 
 
 ## Installation:
 
