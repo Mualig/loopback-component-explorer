@@ -5,6 +5,7 @@ This is a WIP fork of advanced swagger.json OAuth2 support for Loopback using la
 ## Tasks
 
 - [ ] Review [teaualune loadSwaggerUI](https://github.com/teaualune/loopback-component-explorer/blob/feat/swagger-ui-3/public/lib/loadSwaggerUI.js)
+- [ ] Review [STRML loadSwaggerUI](https://github.com/STRML/loopback-component-explorer/blob/master/public/lib/loadSwaggerUI.js)
 
 ## Key Repositories
 
