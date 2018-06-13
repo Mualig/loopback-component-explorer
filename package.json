@@ -39,7 +39,7 @@
     "debug": "^2.2.0",
     "depd": "^1.1.0",
     "lodash": "^3.10.0",
-    "loopback-swagger": "git+https://github.com/drmikecrowe/loopback-swagger.git#v6.0.0-drmikecrowe3",
+    "loopback-swagger": "git+https://github.com/drmikecrowe/loopback-swagger.git#v6.0.0-drmikecrowe1",
     "strong-globalize": "^3.1.0",
     "swagger-ui-dist": "^3.9"
   }
