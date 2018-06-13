@@ -72,12 +72,12 @@ function routes (loopbackApplication, options) {
     var config = {
       url: urlJoin(source, '/' + options.resourcePath),
     }
-    var secDef = _get(options, 'securityDefinitions', {})
-    secDef.forEach(function (o) {
-      if (o.type === 'oauth2' && o.authorizationUrl > '') {
-        config.oauth2RedirectUrl = loopbackApplication.get('url') + urlJoin(source, 'oauth2-redirect.html')
-      }
-    })
+    // var secDef = _get(options, 'securityDefinitions', {})
+    // secDef.forEach(function (o) {
+    //   if (o.type === 'oauth2' && o.authorizationUrl > '') {
+    //     config.oauth2RedirectUrl = loopbackApplication.get('url') + urlJoin(source, 'oauth2-redirect.html')
+    //   }
+    // })
     res.send(config)
   })
 
