@@ -18,8 +18,11 @@ $(function () {
     $.getJSON('config.json', function (config) {
         log(config);
         loadSwaggerUi(config);
-        $('.topbar-wrapper a').remove();
-        $('.topbar-wrapper').prepend('<a href="#" class="link"><img src="images/logo_small.png" alt="Swagger UI"><span>LoopBack API Explorer</span></a>');
+
+      $('.topbar-wrapper').remove();
+      setTimeout(function () {
+          $('.information-container').remove();
+        }, 300)
     });
 
     const UpdateTitle = function(system) {
